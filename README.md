@@ -1,4 +1,4 @@
-## Java - Stack Operations
+## Java | Stack Operations
 # Simple Text Editor with Undo Fucntionality
 
 Task assignment was to create TextOperations class that is used to define the struct and operations of a text editor program with undo functionality. 
