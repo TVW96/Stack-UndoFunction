@@ -70,6 +70,6 @@ Create my text editor file.
     }
     ```
 
-**Step 3: **
+**Step 3:**
 Instantiate the main instance of my TextEditor, asking for user input. 
 
