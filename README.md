@@ -1,11 +1,10 @@
 ## Java | Stack Operations
-# Simple Text Editor with Undo Fucntionality
+# Simple Text Editor with a Undo Functionality
 
-Task assignment was to create TextOperations class that is used to define the struct and operations of a text editor program with undo functionality. 
+Task assignment: using stack operations design a program that handles an undo, add, and delete functionality within it's text editor. Design that text editor and create a class labeled TextOperations that will define the struct of operations needed for this program. 
 
 **Step 1:**
-
-Define the TextOperations class as specified.
+- Define the TextOperations class as specified.
 ```
 class TextOperation {
     String operationType; // 'add', 'delete', 'undo'.
@@ -16,16 +15,20 @@ class TextOperation {
     }
 }
 ```
-The class accepts operation type and character value as it's parameters, correctly defining operations to be handled.
-
-
 **Step 2:**
-Create my text editor file. 
-
-- Define needed variables for i/o stack operations.
+- Define needed variables for i/o of stack operations.
   - `private StringBuilder noteBook;`
   - `private Stack<TextOperation> undoStack;`
-- Build the functions for my 'add', 'delete', and 'undo' operations.
+**Step 3:**
+- Create the text editor function defining the textEditor itself. 
+```
+public textEditor() {
+    this.noteBook = new StringBuilder();
+    this.undoStack = new Stack<>();
+}
+```
+**Step 4:**
+- Build function methods for 'add', 'delete', and 'undo' operations.
   ### add()
   ```
   public void addText(char character) {
